@@ -282,3 +282,7 @@
     letter-spacing: 0.5px;
     color: #9A9A9B;
 }
+
+.mob-btn{
+    display: none;
+}
