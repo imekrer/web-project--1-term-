@@ -297,7 +297,7 @@
     font-size: 50px;
     letter-spacing: 0.8px;
     color: #000000
-}ano
+}
 
 .course-count{
     font-style: normal;
@@ -312,8 +312,13 @@
     display: none;
 }
 
+.course-count:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 .hah{
-  background-color:#bcc1bb;
+  background-color:#b8bfb7;
   width: 100%;
   height: 730px;
   z-index: -10;
@@ -343,10 +348,23 @@
 }
 
 .tibet{
-  display: absolute;
- padding: 100px;
+  position:absolute;
+  right:0;
+  top: 2002px;;
+  height: 600px;
 }
 
+.loader-line {
+  width: 200px;
+  height: 3px;
+  position: relative;
+  overflow: hidden;
+  background-color: #ddd;
+  margin: 100px auto;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
 
 @media (max-width: 1120px) {
     .container {
