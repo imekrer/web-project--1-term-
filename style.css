@@ -15,6 +15,7 @@
 /*Header*/
 .header{
     background-color: #1A1A1A;
+    background-image: linear-gradient(to bottom right, #1A1A1A, rgb(66, 66, 63));
     padding-top: 36PX;
     padding-bottom: 200PX;
 }
@@ -23,6 +24,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.black:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
 .logo{
@@ -36,6 +42,8 @@
     text-decoration: none;
     color: #1A1A1A;
     font-weight: bold;
+    position: fixed;
+    z-index: 4;
 }
 
 .navigation-holder{
@@ -46,12 +54,23 @@
     justify-content: space-evenly;
 }
 
+.black{
+  background-color:#1A1A1A;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  z-index: 3;
+  top: 0px
+}
+
 .nav-links{
     text-decoration: none;
     color: #D1D1D1;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 13px;
+    position: fixed;
+    z-index: 4;
 }
 
 .header-title{
@@ -81,7 +100,7 @@
 }
 
 .join{
-    background-color: #FEBE02;
+    background-color: #aaf;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -94,6 +113,11 @@
     align-items: flex-start;
     text-decoration: bold;
     border-radius: 6px;
+}
+
+.join:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .header-info-block{
@@ -140,8 +164,8 @@
 
 .about-desc {
     color: #D1D1D1;
-    max-width: 340px;
-    font-size: 14px;
+    max-width: 720px;
+    font-size: 30px;
     line-height: 1.8;
 }
 
@@ -273,7 +297,7 @@
     font-size: 50px;
     letter-spacing: 0.8px;
     color: #000000
-}
+}ano
 
 .course-count{
     font-style: normal;
@@ -283,9 +307,46 @@
     color: #9A9A9B;
 }
 
+
 .mob-btn{
     display: none;
 }
+
+.hah{
+  background-color:#bcc1bb;
+  width: 100%;
+  height: 730px;
+  z-index: -10;
+}
+
+.about-text-wrapper{
+  padding: 100px;
+}
+
+.about-desc1 {
+  color: #000000;
+  max-width: 720px;
+  font-size: 30px;
+  line-height: 1.8;
+}
+
+.about-subtitle-text1{
+  display: inline-block;
+  border-left: 1px solid #000000;
+  padding: 8px 0 8px 20px;
+  color:#000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  margin-bottom: 13px;
+}
+
+.tibet{
+  display: absolute;
+ padding: 100px;
+}
+
 
 @media (max-width: 1120px) {
     .container {
